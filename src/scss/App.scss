@@ -1,0 +1,902 @@
+@import "variables";
+@import "global";
+@import "footer";
+//HERO
+.hero-image {
+  // background-image: url("../photos/hero.jpg");
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(241, 240, 234) 11.2%,
+    rgb(175, 214, 202) 91.1%
+  );
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(241, 240, 234) 11.2%,
+    rgb(247, 221, 221) 91.1%
+  );
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(239, 202, 247) 11.2%,
+    rgb(153, 200, 214) 91.1%
+  );
+  height: 750px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  .hero {
+    height: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    //  background: $heroBcgColor;
+
+    .logo {
+      margin: 15px;
+      margin-top: 30px;
+      height: 50px;
+      width: 100px;
+      opacity: 0.8;
+      object-fit: cover;
+    }
+
+    //hero slider
+    .slider {
+      margin-top: 10px;
+      width: 90%;
+      padding: 20px;
+      padding-top: 10px;
+
+      justify-content: center;
+      display: flex;
+      align-items: center;
+
+      //vrati u slajder
+      .sliderimg {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        -webkit-box-shadow: 4px 2px rgb(63, 62, 62), -4px 0 2px rgb(63, 62, 62);
+        -moz-box-shadow: 4px 0 2px rgb(63, 62, 62), -4px 0 2px rgb(63, 62, 62);
+        // box-shadow: 4px 0 2px #ccc, -4px 0 2px rgb(78, 78, 78);
+        box-shadow: 0 0 15px -2px rgb(63, 62, 62);
+        transition: $mainTransition;
+      }
+      .box {
+        transition: $mainTransition;
+        width: 100%;
+        height: 350px;
+        background: transparent;
+        margin: 40px auto;
+        box-shadow: inset 0px 11px 8px -10px #ccc,
+          inset 0px -11px 8px -10px #ccc;
+      }
+      .effect5 {
+        position: relative;
+      }
+      .effect5:before,
+      .effect5:after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 25px;
+        left: 10px;
+        width: 50%;
+        top: 80%;
+        max-width: 300px;
+        background: #777;
+        -webkit-box-shadow: 0 35px 20px #777;
+        -moz-box-shadow: 0 35px 20px #777;
+        box-shadow: 0 35px 20px #777;
+        -webkit-transform: rotate(-8deg);
+        -moz-transform: rotate(-8deg);
+        -o-transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+      }
+      .effect5:after {
+        -webkit-transform: rotate(8deg);
+        -moz-transform: rotate(8deg);
+        -o-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        transform: rotate(8deg);
+        right: 10px;
+        left: auto;
+      }
+    }
+  }
+}
+//END OF HERO
+
+//SERVICES
+.services {
+  background: $servicesBcgColor;
+  height: 1400px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .service-box-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    .first {
+      grid-row: 1/2;
+      grid-column: 1;
+      justify-self: center;
+    }
+    .service-box {
+      background: transparent;
+      // border-radius: 10px;
+      height: 300px;
+      width: 100%;
+      justify-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+      h3 {
+        color: $servicesTitleColor;
+        font-weight: 600;
+        font-size: $titleSize;
+        margin: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        font-family: $mainFontFamily;
+        font-family: cursive;
+        font-size: 22px;
+      }
+      p {
+        height: 70px;
+        width: 100%;
+        color: $paragraphColor;
+        font-size: $paragraphSize;
+        font-style: italic;
+      }
+      img {
+        height: 100px;
+        width: 122px;
+        margin-bottom: 10px;
+        padding-right: 5px;
+      }
+      .icon {
+        position: absolute;
+        margin-top: 17px;
+        font-size: $servicesIconSize;
+        color: $servicesIconColor;
+      }
+    }
+  }
+}
+//END OF SERVICES
+
+//PRODUCTS
+.products {
+  background: $productsBcgColor;
+  height: 1500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  .products-holder {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    //   width: 90%;
+
+    .first {
+      grid-row: 1/2;
+      grid-column: 1;
+      justify-self: center;
+    }
+
+    //one product
+    .product-box {
+      justify-self: center;
+      height: 250px;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+      border: 1px solid $productBoxBorderColor;
+      img {
+        object-fit: cover;
+        height: 200px;
+        width: 250px;
+      }
+      .product-info {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        height: 50px;
+        h3 {
+          color: $paragraphColor;
+          font-weight: 400;
+          font-family: cursive;
+        }
+        p {
+          color: $titleColor;
+          font-size: $titleSize;
+          font-family: $mainFontFamily;
+        }
+      }
+    }
+    //end of one product
+  }
+  //to display box of products when choosen
+  .active {
+    display: grid;
+  }
+  //corrections to nav
+  .products-nav {
+    height: 50px;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    .links {
+      margin: 0;
+      .link-active {
+        color: $productLinkColor;
+      }
+      a {
+        color: $paragraphColor;
+        margin: 10px;
+        &:hover {
+          color: $productLinkColor;
+        }
+      }
+    }
+  }
+  .button-holder {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .button {
+      background: transparent;
+      font-family: $mainFontFamily;
+      border: none;
+      font-size: $subtitleSize;
+      margin: 10px;
+      color: $paragraphColor;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        color: $productLinkColor;
+      }
+    }
+    .active {
+      color: $productLinkColor;
+    }
+  }
+}
+//END OF PRODUCTS
+
+//TEAM
+.team {
+  height: 1600px;
+  background-image: url("../photos/team.jpg");
+  .white {
+    height: 1600px;
+    background: $teamBcgLayer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      h1 {
+        color: $teamTextColor;
+        font-family: cursive;
+        font-size: 25px;
+      }
+    }
+  }
+  .team-box-holder {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+
+    .first {
+      grid-row: 1/2;
+      grid-column: 1;
+    }
+    .team-box {
+      border-radius: 10px;
+      height: 370px;
+      width: 270px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+
+      z-index: 4;
+      h3 {
+        color: $teamTextColor;
+        font-weight: 600;
+        font-size: $titleSize;
+        margin: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        font-family: $mainFontFamily;
+        font-family: cursive;
+      }
+      p {
+        color: $teamTextColor;
+        font-size: $paragraphSize;
+        font-style: italic;
+      }
+      img {
+        height: 160px;
+        width: 165px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 10px solid $TeamImgBorderColor;
+      }
+    }
+  }
+}
+//END OF TEAM
+
+//SKILLS
+.skills {
+  height: 600px;
+  width: 100%;
+  background: $skillsBcgColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  .skills-holder {
+    width: 60%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    .first {
+      grid-row: 1/2;
+      grid-column: 1;
+    }
+    .pr-box {
+      justify-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      text-align: left;
+      p {
+        color: $paragraphColor;
+        font-size: $subtitleSize;
+      }
+    }
+    .progress {
+      background-color: #d8d8d8;
+      border-radius: 20px;
+      position: relative;
+      margin: 15px 0;
+      height: 15px;
+      width: 250px;
+      .progress-done {
+        background: linear-gradient(to left, #f2709c, #ff9472);
+        box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+        border-radius: 20px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 0;
+        opacity: 0;
+        transition: 1s ease 0.3s;
+      }
+    }
+  }
+}
+//END OF SKILLS
+
+//VIDEO
+.video-holder {
+  height: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  video {
+    object-fit: contain;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    margin-bottom: 200px;
+    vertical-align: baseline;
+    position: sticky;
+    display: inline-block;
+    display: none;
+  }
+  .quote {
+    display: none;
+  }
+}
+//END OF VIDEO
+
+//WHO WE ARE
+.who-we-are {
+  background: $whoweareBcgColor;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  //z-index: 4;
+  .about {
+    margin-top: 20px;
+    background: $whoinnerColor;
+    height: 530px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    .dashed {
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      height: 560px;
+      border-top: dashed 2px $whoDashedColor;
+      border-bottom: dashed 2px $whoDashedColor;
+    }
+    img {
+      height: 80px;
+      width: 90px;
+      margin-bottom: 10px;
+      margin-top: 60px;
+      opacity: 0.8;
+    }
+    p {
+      font-size: $paragraphSize;
+      line-height: 25px;
+      color: $paragraphColor;
+
+      text-align: center;
+      margin: 0 5px;
+    }
+  }
+}
+//END OF WHO WE ARE
+
+//SPECIAL OFFER
+.special {
+  background: $specialOfferBcg;
+  height: 1500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 50px;
+  .special-offer-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+    margin-top: 50px;
+    .special-box {
+      height: 400px;
+      width: 250px;
+      background: $specialOfferBoxBcg;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .dashed {
+        border-top: dashed 2px $whoDashedColor;
+        border-bottom: dashed 2px $whoDashedColor;
+        height: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+      }
+      .icon {
+        font-size: $specialIconFontSize;
+        color: $titleColor;
+        opacity: 0.7;
+        margin-top: 30px;
+      }
+      h3 {
+        font-family: $mainFontFamily;
+        margin: 10px;
+        color: $productLinkColor;
+        opacity: 0.7;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: cursive;
+      }
+      p {
+        font-style: italic;
+        color: $paragraphColor;
+        font-size: $paragraphSize;
+        text-align: center;
+        margin: 10px;
+        margin-top: 0;
+      }
+      h4 {
+        font-size: $specialPriceFontSize;
+        color: $titleColor;
+        opacity: 0.7;
+        font-weight: 400;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+//END OF SPECIAL OFFER
+
+//REVIEWS
+.reviews {
+  margin-bottom: 50px;
+  background-image: url("../photos/review.jpg");
+  object-fit: cover;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .outer-div {
+    background-color: $revImgBorderColor;
+    border: 10px solid $revOuterDivBorderColor;
+    width: 280px;
+    height: 490px;
+    .inner-border-div {
+      background-color: $revInnerDivColor;
+      width: 240px;
+      height: 450px;
+      top: 10px;
+      left: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      padding: 20px;
+      .dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 390px;
+        p {
+          color: $revDotsColor;
+          cursor: pointer;
+
+          .active {
+            color: $revActiveDotColor;
+          }
+        }
+      }
+      .review {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        opacity: 0;
+        img {
+          height: 130px;
+          width: 130px;
+          border-radius: 50%;
+          border: 10px solid $revImgBorderColor;
+          margin-top: 10px;
+          object-fit: cover;
+        }
+        h3 {
+          font-family: $mainFontFamily;
+          font-size: $revTitleSize;
+          color: $productLinkColor;
+          margin: 20px;
+          color: $titleColor;
+          font-family: cursive;
+          font-size: 25px;
+        }
+        p {
+          font-size: $paragraphSize;
+          color: $paragraphColor;
+          font-style: italic;
+          text-align: center;
+        }
+      }
+      .active-rev {
+        opacity: 1;
+      }
+    }
+  }
+}
+//END OF REVIEWS
+
+//CONTACT
+
+.contact-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  .contact-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+    .main-info {
+      padding: 20px;
+      width: 100%;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+      }
+      p {
+        color: $paragraphColor;
+        font-size: $paragraphSize;
+        text-align: center;
+        padding: 0 20px;
+        margin-bottom: 10px;
+      }
+      .line {
+        background: transparent;
+        height: 3px;
+        width: 85%;
+        border-bottom: 1px dashed $contactDashedLineColor;
+        margin: 30px;
+        margin-top: 50px;
+      }
+      .align {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: start;
+        // align-items: center;
+      }
+      .info-p {
+        color: $paragraphColor;
+        font-size: $paragraphSize;
+        text-align: left;
+        width: 100%;
+
+        align-items: center;
+      }
+      h4 {
+        color: $paragraphColor;
+        font-size: $paragraphSize;
+        text-align: right;
+        margin-left: 50px;
+
+        // margin-bottom: 10px;
+        font-size: $contactInfoFontSize;
+        text-align: center;
+        align-items: center;
+      }
+    }
+    .contact {
+      //  background: $contactBcgColor;
+
+      padding: 0px;
+      width: 80%;
+      height: 500px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card-container {
+        width: 90%;
+        position: relative;
+        transition: transform 1s ease;
+        transform-style: preserve-3d;
+        transform: perspective(500px) rotateY(0deg);
+
+        &.flipped {
+          transform: perspective(500px) rotateY(180deg);
+          .data {
+            z-index: 1;
+          }
+        }
+        .card {
+          //  background-image: $contactCardBcgColor;
+          background-color: $contactBcgColor;
+          width: 100%;
+
+          padding: 20px;
+          border-radius: 1px;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+          transform-style: preserve-3d;
+
+          .title-container {
+            display: flex;
+            align-items: center;
+
+            .title {
+              flex: 1;
+              margin: 0;
+
+              height: 100px;
+              font-weight: bold;
+              font-family: cursive;
+            }
+          }
+
+          .toggle-button {
+            position: absolute;
+            border: none;
+            background-color: $contactBcgColor;
+
+            padding: 5px 10px;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            top: 0;
+            right: 0;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          &.card-front {
+            position: relative;
+          }
+
+          &.card-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotateY(180deg);
+          }
+        }
+      }
+      /**
+ * Custom CSS based on the content. You can change the below one as per your needs
+ */
+      .my-form {
+        width: 100%;
+        margin: 0px 0;
+
+        .field {
+          margin: 5px 0;
+
+          label {
+            display: block;
+            line-height: 1.5;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+            opacity: 0.9;
+          }
+
+          input,
+          textarea {
+            font-size: 1.2rem;
+            font-weight: 300;
+            width: 100%;
+            max-width: 100%;
+            line-height: 1;
+            padding: 10px 10px;
+            border-radius: 3px;
+            box-shadow: inset 0 1px 2px #cccccc05;
+            border: 1px solid #ccc;
+          }
+
+          textarea {
+            max-width: 100%;
+          }
+        }
+
+        button {
+          background-color: $productLinkColor;
+          color: $contactBcgColor;
+          font-size: 1.2rem;
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+//END OF CONTACT
+
+//FOOTER
+.footer {
+  height: 3em;
+
+  &:hover {
+    min-height: 17em;
+  }
+}
+.footer #container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  .vr-line {
+    display: none;
+  }
+  .links,
+  .social-media-list {
+    height: 100px;
+    width: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .links {
+    margin-top: 20px;
+    a {
+      font-family: cursive;
+      font-size: 15px;
+    }
+  }
+  .social-media-list {
+    font-size: 1rem;
+  }
+}
+//END OF FOOTER
+@import "responsive";

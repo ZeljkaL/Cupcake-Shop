@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//global
+.alice-carousel__prev-btn-wrapper,
+.alice-carousel__next-btn-wrapper {
+  span {
+    display: none;
+  }
+}
+.alice-carousel__dots {
+  li {
+    background: rgb(189, 183, 183);
+    // z-index: 2;
+  }
+}
+.title {
+  background: transparent;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 40px;
+
+    font-weight: 500;
+    color: $titleColor;
+    transform: translateY(0px);
+    font-family: $mainFontFamily;
+    margin-bottom: -20px;
+    font-family: cursive;
+  }
+
+  img {
+    height: 56px;
+    width: 370px;
+    opacity: 0.6;
+    object-fit: cover;
+    // margin: 2px;
+  }
+}
+
+//hero nav
+nav {
+  height: 70px;
+  width: 83%;
+  display: flex;
+  //  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-top: dashed 2px $dashedNavLineColor;
+  border-bottom: dashed 2px $dashedNavLineColor;
+  .links {
+    display: flex;
+    align-items: center;
+    // justify-content: start;
+    //  padding-left: 100px;
+    // width: 50%;
+    text-align: center;
+    //  margin: 10px;
+    a {
+      text-decoration: none;
+      color: $paragraphColor;
+      color: #fff;
+      //  font-family: $mainFontFamily;
+      font-size: $titleSize;
+      font-size: 13px;
+      font-family: cursive;
+      margin: 5px;
+      &:hover {
+        //  color: $productLinkColor;
+        color: $paragraphColor;
+      }
+    }
+  }
+
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    //  border: 3px solid red;
+    display: none;
+    li {
+      position: relative;
+      top: 0;
+      left: -20px;
+      height: 40px;
+      width: 40px;
+      margin: 10px 0.2em;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #fff;
+      color: $paragraphColor;
+      background-color: $paragraphColor;
+      background-color: #fff;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        opacity: 0;
+        box-shadow: 0 0 0 1px $paragraphColor;
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover {
+        background-color: #fff;
+        background-color: $paragraphColor;
+      }
+      &:hover:after {
+        opacity: 1;
+        transform: scale(1.12);
+        transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+      }
+      &:hover a {
+        color: $paragraphColor;
+        color: #fff;
+      }
+      a {
+        color: #fff;
+        color: $paragraphColor;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 4;
+      }
+    }
+  }
+}
+//end of global

@@ -1,0 +1,1013 @@
+@media (min-width: 768px) {
+  .title {
+    width: 100%;
+    h1 {
+      font-family: cursive;
+    }
+  }
+
+  //hero nav
+  nav {
+    width: 83%;
+    .links {
+      width: 50%;
+      a {
+        font-family: "Brush Script MT";
+        font-size: 30px;
+      }
+    }
+  }
+
+  //HERO
+  .hero-image {
+    height: 1000px;
+    width: 100%;
+    .hero {
+      height: 1000px;
+      width: 100%;
+      .logo {
+        margin: 30px;
+        margin-top: 80px;
+        height: 80px;
+        width: 150px;
+      }
+      //hero slider
+      .slider {
+        width: 90%;
+        .sliderimg {
+          width: 100%;
+          height: 500px;
+        }
+        .box {
+          width: 100%;
+          height: 500px;
+        }
+      }
+    }
+  }
+  //END OF HERO
+
+  //SERVICES
+  .services {
+    height: 800px;
+    .service-box-holder {
+      width: 90%;
+      margin: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .first {
+      justify-self: center;
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+    .service-box {
+      justify-self: center;
+      height: 400px;
+      width: 400px;
+    }
+  }
+  //END OF SERVICES
+
+  //PRODUCTS
+  .products {
+    height: 1050px;
+    width: 100%;
+
+    .products-holder {
+      width: 80%;
+      height: 700px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      display: none;
+      .first {
+        justify-self: center;
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+      //one product
+      .product-box {
+        height: 290px;
+        width: 280px;
+        img {
+          height: 250px;
+          width: 280px;
+        }
+      }
+      //end of one product
+    }
+    .active {
+      display: grid;
+    }
+
+    //corrections to nav
+    .products-nav {
+      width: 80%;
+    }
+  }
+  //END OF PRODUCTS
+
+  //TEAM
+  .team {
+    height: 1000px;
+
+    .white {
+      height: 1000px;
+    }
+    .team-box-holder {
+      width: 80%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      .first {
+        justify-self: center;
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+      .team-box {
+        height: 350px;
+        width: 350px;
+        img {
+          height: 180px;
+          width: 190px;
+        }
+      }
+    }
+  }
+  //END OF TEAM
+
+  //SKILLS
+  .skills {
+    height: 650px;
+    justify-content: center;
+    .skills-holder {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      width: 90%;
+      .first {
+        grid-row: 1/2;
+        grid-column: 1;
+      }
+      .progress {
+        width: 300px;
+      }
+    }
+  }
+  //END OF SKILLS
+
+  //VIDEO
+  .video-holder {
+    height: 400px;
+
+    video {
+      display: inline-block;
+    }
+  }
+  //END OF VIDEO
+
+  //WHO WE ARE
+  .who-we-are {
+    height: 600px;
+    width: 100%;
+    justify-content: center;
+    .about {
+      height: 400px;
+    }
+    .dashed {
+      height: 440px;
+    }
+  }
+  //END OF WHO WE ARE
+
+  .reviews {
+    .outer-div {
+      width: 400px;
+      .inner-border-div {
+        width: 360px;
+      }
+    }
+  }
+
+  .contact-component {
+    .contact-holder {
+      .main-info {
+        width: 70%;
+        p {
+          padding: 0 50px;
+        }
+      }
+      .contact {
+        width: 80%;
+
+        .card-container {
+          width: 100%;
+          .card {
+            .title {
+              font-family: $mainFontFamily;
+              color: $productLinkColor;
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//BIGGER SCREEN
+@media (min-width: 1024px) {
+  .title {
+    h1 {
+      font-family: $mainFontFamily;
+      font-size: 45px;
+    }
+  }
+  //hero nav
+  nav {
+    width: 70%;
+    .links {
+      width: 70%;
+      justify-content: start;
+      padding-left: 30px;
+      width: 60%;
+    }
+    .social-media-list {
+      width: 40%;
+      display: flex;
+      //  justify-content: flex-end;
+    }
+  }
+
+  //HERO
+  .hero-image {
+    height: 1000px;
+    width: 100%;
+    .hero {
+      height: 1000px;
+      width: 100%;
+      .logo {
+        height: 90px;
+        width: 160px;
+      }
+      //hero slider
+      .slider {
+        width: 75%;
+        .sliderimg {
+          width: 100%;
+          height: 500px;
+        }
+        .box {
+          width: 100%;
+          height: 500px;
+        }
+      }
+    }
+  }
+  //END OF HERO
+
+  //SERVICES
+  .services {
+    height: 550px;
+    width: 100%;
+
+    .service-box-holder {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: 100%;
+      .first {
+        grid-row: 1;
+        grid-column: 1/2;
+      }
+      .service-box {
+        // height: 400px;
+        padding: 5px;
+        width: 100%;
+
+        h3 {
+          width: 100%;
+          height: 50px;
+          font-size: 27px;
+          font-family: $mainFontFamily;
+        }
+        p {
+          height: 100px;
+          width: 100%;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  //END OF SERVICES
+
+  //PRODUCTS
+  .products {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    .products-holder {
+      height: 300px;
+
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: 900px;
+      display: none;
+      .first {
+        grid-row: 1;
+        grid-column: 1/2;
+      }
+
+      //one product
+      .product-box {
+        height: 240px;
+        width: 210px;
+        margin: 5px;
+
+        h3 {
+          font-family: initial;
+        }
+
+        img {
+          height: 200px;
+          width: 210px;
+        }
+      }
+      //end of one product
+    }
+    //to display box of products when choosen
+    .active {
+      display: grid;
+    }
+    //corrections to nav
+    .products-nav {
+      width: 900px;
+      justify-content: center;
+
+      padding: 0;
+      .links {
+        justify-content: center;
+        padding: 0;
+      }
+    }
+  }
+  //END OF PRODUCTS
+
+  //TEAM
+  .team {
+    height: 700px;
+    background-image: url("../photos/team.jpg");
+    .white {
+      height: 700px;
+      background: $teamBcgLayer;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      .title {
+        h1 {
+          color: $teamTextColor;
+          font-family: $mainFontFamily;
+          font-size: 45px;
+        }
+      }
+    }
+    .team-box-holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      .team-box {
+        border-radius: 10px;
+        height: 500px;
+        width: 250px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+
+        z-index: 4;
+        h3 {
+          color: $teamTextColor;
+          font-weight: 600;
+          font-size: $titleSize;
+          margin: 10px;
+          margin-left: 0;
+          margin-right: 0;
+          font-family: $mainFontFamily;
+          height: 50px;
+          width: 100%;
+        }
+        p {
+          height: 100px;
+          color: $teamTextColor;
+          font-size: $paragraphSize;
+          font-style: italic;
+        }
+        img {
+          height: 200px;
+          width: 210px;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 10px solid $TeamImgBorderColor;
+        }
+      }
+    }
+  }
+  //END OF TEAM
+
+  //SKILLS
+  .skills {
+    height: 600px;
+
+    .skills-holder {
+      width: 80%;
+      height: 400px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      .first {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+      .progress {
+        width: 300px;
+      }
+    }
+  }
+  //END OF SKILLS
+
+  //VIDEO
+  .video-holder {
+    // height: 500px;
+    .quote {
+      // margin-top: -55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(19, 17, 17, 0.719);
+      height: 900px;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      .quote-img {
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 200px;
+        // background: rgb(14, 161, 14);
+        img {
+          width: 700px;
+          height: auto;
+          object-fit: cover;
+        }
+        .text {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          position: absolute;
+          padding-top: 15px;
+
+          p {
+            width: 500px;
+            font-size: 20px;
+            color: rgb(85, 84, 84);
+            text-align: center;
+            //  margin: 20x 0;
+            font-style: italic;
+            font-family: initial;
+          }
+          h3 {
+            margin-top: 10px;
+            font-family: $mainFontFamily;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  //END OF VIDEO
+
+  //WHO WE ARE
+  .who-we-are {
+    height: 600px;
+    width: 100%;
+
+    .about {
+      height: 340px;
+      width: 70%;
+
+      .dashed {
+        height: 320px;
+      }
+    }
+  }
+  //END OF WHO WE ARE
+
+  //SPECIAL OFFER
+  .special {
+    height: 700px;
+    width: 100%;
+    .special-offer-holder {
+      display: flex;
+      flex-direction: row;
+
+      .special-box {
+        height: 430px;
+        width: 300px;
+
+        margin: 20px;
+        h3 {
+          font-family: $mainFontFamily;
+          font-size: $specialTitleFontSize;
+        }
+
+        .dashed {
+          height: 400px;
+        }
+      }
+    }
+  }
+  //END OF SPECIAL OFFER
+
+  //REVIEWS
+  .reviews {
+    .outer-div {
+      width: 490px;
+      height: 520px;
+      .inner-border-div {
+        width: 450px;
+        height: 480px;
+
+        .dots {
+          margin-top: 420px;
+        }
+        .review {
+          padding: 20px;
+          h3 {
+            font-family: $mainFontFamily;
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+  //END OF REVIEWS
+  //CONTACT
+  /**
+       * CSS Needed to make the card and rotation happen..
+       */
+  .contact-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    .contact-holder {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin: 50px 0;
+      .main-info {
+        padding: 20px;
+        width: 50%;
+        height: 650px;
+
+        img {
+          height: 100px;
+          width: 100px;
+        }
+      }
+      .contact {
+        padding: 20px;
+        width: 480px;
+        height: 650px;
+        .card-container {
+          .card {
+            .title-container {
+              .title {
+                font-family: $mainFontFamily;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //END OF CONTACT
+
+  //FOOTER
+  .footer {
+    height: 2em;
+
+    &:hover {
+      min-height: 15em;
+    }
+  }
+  .footer #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .vr-line {
+      display: flex;
+    }
+    .links,
+    .social-media-list {
+      width: 500px;
+      // border: 3px solid green;
+    }
+    .links {
+      margin-top: 0;
+      padding: 20px;
+      a {
+        font-family: $mainFontFamily;
+        font-size: 30px;
+      }
+    }
+    .social-media-list {
+      font-size: 2rem;
+    }
+  }
+  //END OF FOOTER
+}
+//BIGGEST SCREEN
+@media (min-width: 1400px) {
+  .title {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  //hero nav
+  nav {
+    width: 53%;
+
+    .links {
+      width: 50%;
+      justify-content: start;
+      padding-left: 30px;
+      width: 60%;
+    }
+    .social-media-list {
+      width: 50%;
+      display: flex;
+      //  justify-content: flex-end;
+    }
+  }
+
+  //HERO
+  .hero-image {
+    height: 1100px;
+    width: 100%;
+    .hero {
+      height: 1100px;
+      width: 100%;
+
+      //hero slider
+      .slider {
+        width: 55%;
+        .sliderimg {
+          width: 100%;
+          height: 600px;
+        }
+        .box {
+          width: 100%;
+          height: 600px;
+        }
+      }
+    }
+  }
+  //END OF HERO
+
+  //SERVICES
+  .services {
+    height: 550px;
+    width: 100%;
+
+    .service-box-holder {
+      width: 70%;
+
+      .service-box {
+        padding: 5px;
+        width: 100%;
+      }
+    }
+  }
+  //END OF SERVICES
+
+  //PRODUCTS
+  .products {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    .products-holder {
+      height: 300px;
+
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: 900px;
+      display: none;
+      .first {
+        grid-row: 1;
+        grid-column: 1/2;
+      }
+
+      //one product
+      .product-box {
+        height: 260px;
+        width: 220px;
+        margin: 5px;
+        justify-content: space-around;
+
+        img {
+          height: 210px;
+          width: 220px;
+        }
+      }
+      //end of one product
+    }
+    //to display box of products when choosen
+    .active {
+      display: grid;
+    }
+    //corrections to nav
+    .products-nav {
+      width: 900px;
+    }
+  }
+  //END OF PRODUCTS
+
+  //SKILLS
+  .skills {
+    height: 650px;
+
+    .skills-holder {
+      width: 65%;
+      .progress {
+        width: 400px;
+      }
+    }
+  }
+  //END OF SKILLS
+
+  //VIDEO
+  .video-holder {
+    height: 600px;
+    .quote {
+      .quote-img {
+        img {
+          width: 1000px;
+        }
+        .text {
+          p {
+            width: 550px;
+            font-size: 25px;
+          }
+          h3 {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+  //END OF VIDEO
+
+  //WHO WE ARE
+  .who-we-are {
+    height: 600px;
+    width: 100%;
+    // z-index: 8;
+    .about {
+      height: 340px;
+      width: 60%;
+
+      .dashed {
+        height: 320px;
+      }
+    }
+  }
+  //END OF WHO WE ARE
+
+  //SPECIAL OFFER
+  .special {
+    margin-bottom: 100px;
+    height: 700px;
+    width: 100%;
+  }
+  //END OF SPECIAL OFFER
+
+  //CONTACT
+  /**
+         * CSS Needed to make the card and rotation happen..
+         */
+  .contact-component {
+    .contact-holder {
+      justify-content: center;
+      .main-info {
+        padding: 20px;
+        width: 50%;
+      }
+      .contact {
+        padding: 20px;
+        width: 550px;
+        height: 650px;
+
+        .card-container {
+          .card {
+            max-width: 500px;
+            padding: 20px;
+          }
+        }
+        /**
+             * Custom CSS based on the content. You can change the below one as per your needs
+             */
+        .my-form {
+          width: 500px;
+          margin: 10px 0;
+
+          .field {
+            margin: 15px 0;
+
+            input,
+            textarea {
+              font-size: 1.2rem;
+
+              width: 100%;
+              max-width: 400px;
+            }
+
+            textarea {
+              max-width: 400px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //END OF CONTACT
+}
+
+@media (min-width: 1800px) {
+  nav {
+    width: 53%;
+
+    .links {
+      justify-content: center;
+    }
+  }
+  .services {
+    .service-box-holder {
+      width: 60%;
+      .service-box {
+        h3 {
+          font-size: 30px;
+        }
+        p {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+  .skills {
+    .skills-holder {
+      .pr-box {
+        p {
+          font-size: 23px;
+        }
+      }
+      .progress {
+        width: 500px;
+      }
+    }
+  }
+  //REVIEWS
+  .reviews {
+    .outer-div {
+      width: 540px;
+      height: 540px;
+      .inner-border-div {
+        width: 500px;
+        height: 500px;
+
+        .dots {
+          margin-top: 450px;
+        }
+        .review {
+          padding: 40px;
+
+          img {
+            height: 170px;
+            width: 170px;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+  //END OF REVIEWS
+
+  //CONTACT
+
+  .contact-component {
+    .contact-holder {
+      display: flex;
+      flex-direction: row;
+
+      width: 80%;
+
+      padding-top: 20px;
+      .main-info {
+        padding: 20px;
+        width: 50%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 60px;
+          width: 60px;
+          object-fit: cover;
+        }
+        p {
+          color: $paragraphColor;
+          font-size: $paragraphSize;
+          text-align: justify;
+          padding: 0 50px;
+          margin-bottom: 10px;
+        }
+        .line {
+          background: transparent;
+          height: 3px;
+          width: 85%;
+          border-bottom: 1px dashed $contactDashedLineColor;
+          margin: 30px;
+          margin-top: 50px;
+        }
+        .align {
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          justify-content: start;
+          // align-items: center;
+        }
+        .info-p {
+          color: $paragraphColor;
+          font-size: $paragraphSize;
+          text-align: left;
+          width: 100%;
+
+          align-items: center;
+        }
+        h4 {
+          color: $paragraphColor;
+          font-size: $paragraphSize;
+          text-align: right;
+          margin-left: 50px;
+
+          // margin-bottom: 10px;
+          font-size: $contactInfoFontSize;
+          text-align: center;
+          align-items: center;
+        }
+      }
+      .contact {
+        //  background: $contactBcgColor;
+
+        width: 550px;
+        height: 600px;
+
+        .my-form {
+          width: 100%;
+
+          .field {
+            margin: 15px 0;
+
+            textarea {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  //END OF CONTACT
+}
