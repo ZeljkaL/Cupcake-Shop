@@ -20,7 +20,7 @@
 
   //HERO
   .hero-image {
-    height: 1000px;
+    height: 400px;
     width: 100%;
     .hero {
       height: 1000px;
@@ -254,6 +254,7 @@
       //hero slider
       .slider {
         width: 75%;
+        display: block;
         .sliderimg {
           width: 100%;
           height: 500px;
