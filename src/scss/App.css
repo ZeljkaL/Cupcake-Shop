@@ -1000,6 +1000,10 @@ nav .social-media-list li a {
   transition: 1s ease 0.3s;
 }
 
+.skills .skills-holder .progress .disabled {
+  display: none;
+}
+
 .video-holder {
   height: 0;
   display: -webkit-box;
@@ -1660,6 +1664,15 @@ nav .social-media-list li a {
 
 .footer #container .social-media-list {
   font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 768px) {

@@ -383,6 +383,7 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
+
   .skills-holder {
     width: 60%;
     height: 400px;
@@ -426,9 +427,13 @@
         opacity: 0;
         transition: 1s ease 0.3s;
       }
+      .disabled {
+        display: none;
+      }
     }
   }
 }
+
 //END OF SKILLS
 
 //VIDEO
@@ -898,6 +903,10 @@
   }
   .social-media-list {
     font-size: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 //END OF FOOTER
